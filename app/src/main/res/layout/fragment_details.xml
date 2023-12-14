@@ -59,11 +59,11 @@
                 android:layout_marginTop="15dp"
                 android:drawablePadding="8dp"
                 android:gravity="center_vertical"
-                android:textColor="@color/pewterBlue"
-                android:textSize="16sp"
+                android:textColor="@color/whiteSmoke"
+                android:textSize="14sp"
                 android:textStyle="bold"
                 app:drawableStartCompat="@drawable/ic_round_fastfood_24"
-                app:drawableTint="@color/pewterBlue"
+                app:drawableTint="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <!--Area-->
@@ -75,10 +75,10 @@
                 android:layout_marginTop="15dp"
                 android:drawablePadding="8dp"
                 android:gravity="center_vertical"
-                android:textColor="@color/pewterBlue"
-                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
                 app:drawableStartCompat="@drawable/ic_round_language_24"
-                app:drawableTint="@color/pewterBlue"
+                app:drawableTint="@color/whiteSmoke"
                 app:layout_constraintStart_toEndOf="@id/foodCategoryTxt"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,7 +91,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/foodAreaTxt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/foodAreaTxt"
-                app:tint="@color/pewterBlue" />
+                app:tint="@color/whiteSmoke" />
 
 
 
@@ -135,7 +135,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:textColor="@color/charcoal"
+                        android:textColor="@color/grayDark"
                         android:textSize="18sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -177,7 +177,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="10dp"
-                                android:textColor="@color/deepKoamaru"
+                                android:textColor="@color/grayDark"
                                 android:textSize="16sp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/ingredientsTitle"
@@ -212,7 +212,7 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:textColor="@color/deepKoamaru"
+                                android:textColor="@color/grayDark"
                                 android:textSize="16sp"
                                 app:layout_constraintTop_toBottomOf="@+id/measureTitle"
                                 app:layout_constraintStart_toStartOf="parent"
