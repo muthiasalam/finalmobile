@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dataRoot"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_rounded_white"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imgRoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:innerRadius="0dp"
+            android:shape="rectangle"
+
+            app:layout_constraintBottom_toBottomOf="@+id/dataRoot"
+            app:layout_constraintStart_toStartOf="@+id/dataRoot"
+
+            app:layout_constraintTop_toTopOf="@+id/dataRoot">
+
+            <ImageView
+                android:id="@+id/itemFoodsImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@color/darkSlategray"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/dataRoot"
+                app:layout_constraintStart_toStartOf="@+id/dataRoot"
+                app:layout_constraintTop_toTopOf="@+id/dataRoot" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <TextView
+            android:id="@+id/itemFoodsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Food Title"
+            android:textColor="@color/darkSlategray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgRoot"
+            app:layout_constraintTop_toTopOf="@+id/dataRoot" />
+
+
+
+        <TextView
+            android:id="@+id/itemFoodsCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Type"
+            android:textColor="@color/darkSlategray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+
+            app:layout_constraintStart_toEndOf="@+id/imgRoot"
+            app:layout_constraintTop_toBottomOf="@+id/itemFoodsTitle" />
+
+
+
+
+        <TextView
+            android:id="@+id/itemFoodsArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Country"
+            android:textColor="@color/darkSlategray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imgRoot"
+            app:layout_constraintTop_toBottomOf="@+id/itemFoodsCategory"
+             />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
